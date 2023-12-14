@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Architexture</title>
+  <script defer src="https://unpkg.com/alpinejs"></script>
+  <style>
+    .menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100w;
+      height: 100vh;
+      background: #fff;
+      display: grid;
+      place-content: center;
+    }
+
+    .header__menuBtn {
+      position: relative;
+      z-index: 10;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+      <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
+        menu
+      </button>
+      <h1>Architexture</h1>
+      <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+        <ul>
+          <li><a href="/index.html">Acceuil</a>
+          </li>
+          <li><a href="/liens/Infos.html">Infos</a>
+          </li>
+          <li><a href="/liens/billeterie.html">Billeterie</a>
+          </li>
+          <li><a href="index.html">Contact</a></li>
+          </li>
+          <li><a href="index.html">M.Graves</a></li>
+        </ul>
+      </nav>
+    </header>
+<body>
+  <h2>Infos</h2>
+  <p>Dates de l’exposition :
+  du 13 avril au 23 juin 2024
+  </p>
+  <p>
+  Lieu de l’exposition :
+  Foundation Cartier, 261 Bd Raspail, 75014 Paris
+  </p>
+  <p>
+  Horaires d’ouverture :
+  Tous les jours de 11h à 20hsauf le lundi.
+  Nocturne le mardi, jusqu'à 22h.
+  La fermeture des salles débute à 19h45
+  (21h45 les mardis).
+  </p>
+  <p>
+  Tarfis :
+  Plein tarif : 11€
+  Tarif réduit : 7,50€
+  Réduction 13 - 25 ans : 5€
+  Fondation Cartier Pass : 18€ - 50€
+  Moins de 13 ans, Laissez-passer annuel,
+  carte Icom, carte de presse, carte d'invalidité,
+  Fondation Cartier Pass, Etudiants : Gratuit
+</p>
+</body>
+</html>
