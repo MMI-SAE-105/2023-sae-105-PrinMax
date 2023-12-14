@@ -1,11 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Architexture</title>
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <style>
+        .menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100w;
+            height: 100vh;
+            background: #fff;
+            display: grid;
+            place-content: center;
+        }
+
+        .header__menuBtn {
+            position: relative;
+            z-index: 10;
+        }
+    </style>
 </head>
 <body>
-    <header></header>
+    <header>
+        <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
+            menu
+        </button>
+        <h1>Architexture</h1>
+        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+            <ul>
+                <li><a href="cats/index.html">Infos</a>
+                </li>
+                <li><a href="dogs/index.html">Billeterie</a>
+                </li>
+                <li><a href="index.html">Contact</a></li>
+                </li>
+                <li><a href="index.html">M.Graves</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- h2>lorem2^p>lorem -->
+    <h2>Acceuil</h2>
+    <p>
+        Retrouvez tout le génie de Michael Graves dans
+        cette expositions temporaire mettant a l’honneur ses
+        créations.
+    </p>
+    <p>
+        Inscrivez vous sur la
+        billeterie pour ne pas manquer
+        l’exposition.
+    </p>
+    <p>
+        Decouvrez ses créations hors
+        du commun dans cet
+        évenement.
+    </p>
 </body>
 </html>
