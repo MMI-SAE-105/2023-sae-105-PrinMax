@@ -28,7 +28,7 @@ h2{
 
 @font-face {
     font-family: "Josefin Sans";
-    src: url(src/fonts/Josefin) format("truetype");
+    src: url(src/fonts/Jost-VariableFont_wght.ttf) format("truetype");
 }
 
 .titre {
