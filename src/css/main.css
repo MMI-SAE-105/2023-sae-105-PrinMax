@@ -24,6 +24,7 @@ h2{
     font-family: "Jost";
     font-size: 16px;
     text-decoration: none;
+    margin: 10px 20px;
 }
 
 @font-face {
@@ -35,4 +36,5 @@ h2{
     font-family: "Josefin Sans";
     font-size: 20px;
     text-decoration: none;
+    margin: 10px 20px;
 }
