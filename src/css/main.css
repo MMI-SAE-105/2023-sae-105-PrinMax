@@ -38,3 +38,15 @@ h2{
     text-decoration: none;
     margin: 10px 20px;
 }
+input{
+    margin-left: 20px;
+    margin-right: 200px;
+}
+
+button{
+    border: none;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Josefin Sans";
+    cursor: pointer;
+}
