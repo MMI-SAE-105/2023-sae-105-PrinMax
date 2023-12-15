@@ -14,3 +14,25 @@ h2{
     padding-top: 20px;
     text-decoration: none;
 }
+
+@font-face {
+    font-family: "Jost";
+    src: url(src/fonts/Jost-VariableFont_wght.ttf) format("truetype");
+}
+
+.text {
+    font-family: "Jost";
+    font-size: 16px;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: "Josefin Sans";
+    src: url(src/fonts/Josefin) format("truetype");
+}
+
+.titre {
+    font-family: "Josefin Sans";
+    font-size: 20px;
+    text-decoration: none;
+}
