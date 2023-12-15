@@ -20,21 +20,18 @@
             place-content: center;
         }
 
-        .header__menuBtn {
-            position: relative;
-            z-index: 10;
-        }
-
     </style>
 </head>
 <body>
     <header>
         <div class= "header">
-            <a href="/index.html"><img src="public/img/images sae/logo.webp" alt="logo" width=20%></a>
-                <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
-                    <img src="public/img/images sae/menu.png" alt="menu" width=10%>
-                </button>
-        <h1>Architexture</h1>
+            <a href="/index.html">
+                <img src="public/img/images sae/logo.webp" alt="logo" width=20%>
+            </a>
+            <h1>Architexture</h1>
+            <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
+                <img src="public/img/images sae/menu.png" alt="menu" width=100%>
+            </button>
         <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
             <ul>
                 <li><a href="/index.html">Accueil</a>
@@ -50,7 +47,7 @@
         </nav>
     </div>
     </header>
-    <div class="main">
+    <main>
     <h2>Accueil</h2>
     <img src="public/img/images sae/image 1.webp" alt="image de page d'accueil" width="375">
     <p><h1>Michael Graves: L’expo</h1></p>
@@ -71,6 +68,6 @@
         évenement.
     </p>
     <img src="/public/img/images sae/image 4.webp" alt="Accueil2" width="375">
-    </div>
+    </main>
 </body>
 </html>

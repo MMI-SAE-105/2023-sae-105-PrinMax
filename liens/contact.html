@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Architexture</title>
     <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="stylesheet" href="/style.css">
     <style>
         .menu {
             position: fixed;
@@ -18,17 +19,13 @@
             place-content: center;
         }
 
-        .header__menuBtn {
-            position: relative;
-            z-index: 10;
-        }
     </style>
 </head>
 <body>
     <header>
         <a href="/index.html"><img src="/public/img/images sae/logo.webp" alt="logo" width=20%></a>
         <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
-            menu
+            <img src="/public/img/images sae/menu.png" alt="menu" width=100%>
         </button>
         <h1>Architexture</h1>
         <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
